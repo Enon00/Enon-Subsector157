@@ -8,39 +8,39 @@
 
 # Notes:
 # Basic Cargo Depot selling point for economy and great wealth
-- type: pointOfInterest
-  id: CargoDepot
-  parent: BasePOI
-  name: Cargo Depot
-  minimumDistance: 4000
-  maximumDistance: 5000
-  spawnGroup: CargoDepot
-  gridPath: /Maps/_NF/POI/cargodepot.yml
-  addComponents:
-  - type: IFF
-    color: "#37C837"
-  - type: ProtectedGrid
-    preventArtifactTriggers: true
-  - type: SolarPoweredGrid
-    trackOnInit: true
-    doNotCull: true
+- type: pointOfInterest # 157
+  id: CargoDepot # 157
+  parent: BasePOI # 157
+  name: Cargo Depot # 157
+  minimumDistance: 4000 # 157
+  maximumDistance: 5000 # 157
+  spawnGroup: CargoDepot # 157
+  gridPath: /Maps/_NF/POI/cargodepot.yml # 157
+  addComponents: # 157
+  - type: IFF # 157
+    color: "#37C837" # 157
+  - type: ProtectedGrid # 157
+    preventArtifactTriggers: true # 157
+  - type: SolarPoweredGrid # 157
+    trackOnInit: true # 157
+    doNotCull: true # 157
 
-- type: pointOfInterest
-  id: CargoDepotAlt
-  parent: BasePOI
-  name: Cargo Depot
-  minimumDistance: 4000
-  maximumDistance: 5000
-  spawnGroup: CargoDepot
-  gridPath: /Maps/_NF/POI/cargodepotalt.yml
-  addComponents:
-  - type: IFF
-    color: "#37C837"
-  - type: ProtectedGrid
-    preventArtifactTriggers: true
-  - type: SolarPoweredGrid
-    trackOnInit: true
-    doNotCull: true
+- type: pointOfInterest # 157
+  id: CargoDepotAlt # 157
+  parent: BasePOI # 157
+  name: Cargo Depot # 157
+  minimumDistance: 4000 # 157
+  maximumDistance: 5000 # 157
+  spawnGroup: CargoDepot # 157
+  gridPath: /Maps/_NF/POI/cargodepotalt.yml # 157
+  addComponents: # 157
+  - type: IFF # 157
+    color: "#37C837" # 157
+  - type: ProtectedGrid # 157
+    preventArtifactTriggers: true # 157
+  - type: SolarPoweredGrid # 157
+    trackOnInit: true # 157
+    doNotCull: true # 157
 
 - type: gameMap
   id: CargoDepot
