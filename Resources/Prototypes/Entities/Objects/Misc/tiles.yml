@@ -82,6 +82,12 @@
     outputs:
       - Plating
       - FloorDark
+      - DirtPlanetPlating
+      - DirtPlanetFloorDark
+      - CaveDroughtPlanetPlating
+      - CaveDroughtFloorDark
+      - CavePlanetPlating
+      - CaveFloorDark
   - type: Stack
     stackType: FloorTileDark
   - type: Construction
@@ -213,6 +219,12 @@
     outputs:
       - Plating
       - FloorSteel
+      - DirtPlanetPlating
+      - DirtPlanetFloorSteel
+      - CaveDroughtPlanetPlating
+      - CaveDroughtFloorSteel
+      - CavePlanetPlating
+      - CaveFloorSteel
   - type: Stack
     stackType: FloorTileSteel
   - type: Construction
@@ -344,6 +356,12 @@
     outputs:
       - Plating
       - FloorWhite
+      - DirtPlanetPlating
+      - DirtPlanetFloorWhite
+      - CaveDroughtPlanetPlating
+      - CaveDroughtFloorWhite
+      - CavePlanetPlating
+      - CaveFloorWhite
   - type: Stack
     stackType: FloorTileWhite
   - type: Construction
@@ -494,6 +512,12 @@
     outputs:
       - Plating
       - FloorWood
+      - DirtPlanetPlating
+      - DirtPlanetWood
+      - CaveDroughtPlanetPlating
+      - CaveDroughtPlanetWood
+      - CavePlanetPlating
+      - CavePlanetWood
   - type: Stack
     stackType: FloorTileWood
   - type: Construction
@@ -1561,6 +1585,9 @@
     outputs:
       - Plating
       - FloorWoodLarge
+      - DirtPlanetWoodLarge
+      - CaveDroughtPlanetWoodLarge
+      - CavePlanetWoodLarge
   - type: Stack
     stackType: FloorTileWoodLarge
   - type: Construction

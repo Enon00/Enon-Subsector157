@@ -54,6 +54,12 @@
     outputs:
     - Lattice
     - FloorReinforced
+    - DirtPlanetLattice
+    - DirtPlanetReinforced
+    - CaveDroughtPlanetLattice
+    - CaveDroughtPlanetReinforced
+    - CavePlanetLattice
+    - CavePlanetReinforced
   - type: StaticPrice
     price: 0
   - type: StackPrice

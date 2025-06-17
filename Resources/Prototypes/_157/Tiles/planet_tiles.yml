@@ -1,0 +1,436 @@
+# Simple solution for planet building without C# required. How is it done? each tile has a varient and for simpilicy, grass and snow cannot be built upon.
+# DIRT FLOOR
+
+- type: tile
+  id: DirtPlanetLattice
+  name: DirtPlanet lattice
+  sprite: /Textures/_157/Tiles/dirt.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorPlanetDirt
+  isSubfloor: true
+  deconstructTools: [ Cutting ]
+  weather: true
+  footstepSounds:
+    collection: FootstepPlating
+  friction: 0.3
+  isSpace: false
+  itemDrop: PartRodMetal1
+  heatCapacity: 10000
+
+- type: tile
+  id: DirtPlanetPlating
+  name: DirtPlanet plating
+  sprite: /Textures/Tiles/plating.png
+  baseTurf: DirtPlanetLattice
+  isSubfloor: true
+  deconstructTools: [ Axing ] # DeltaV - The return of fireaxe prying
+  footstepSounds:
+    collection: FootstepPlating
+  friction: 0.3
+  itemDrop: SheetSteel1
+  heatCapacity: 10000
+
+- type: tile
+  id: DirtPlanetFloorSteel
+  name: DirtPlanet tile 
+  sprite: /Textures/Tiles/steel.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: DirtPlanetPlating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: DirtPlanetFloorDark
+  name: DirtPlanet tile dark
+  sprite: /Textures/Tiles/dark.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: DirtPlanetPlating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemDark
+  heatCapacity: 10000
+
+- type: tile
+  id: DirtPlanetFloorWhite
+  name: DirtPlanet tile white
+  sprite: /Textures/Tiles/white.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: DirtPlanetPlating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemWhite
+  heatCapacity: 10000
+
+- type: tile
+  id: DirtPlanetWood
+  name: DirtPlanet wood tile
+  sprite: /Textures/Tiles/wood.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: DirtPlanetPlating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepWood
+  barestepSounds:
+    collection: BarestepWood
+  itemDrop: FloorTileItemWood
+  heatCapacity: 10000
+
+- type: tile
+  id: DirtPlanetReinforced
+  name: DirtPlanet reinforced floor
+  sprite: /Textures/Tiles/reinforced.png
+  baseTurf: DirtPlanetPlating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: PartRodMetal1
+  heatCapacity: 10000
+
+- type: tile
+  id: DirtPlanetWoodLarge
+  name: DirtPlanet wood large
+  sprite: /Textures/Tiles/wood_large.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: DirtPlanetPlating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepWood
+  barestepSounds:
+    collection: BarestepWood
+  itemDrop: FloorTileItemWoodLarge
+  heatCapacity: 10000
+
+# DROUGHT CAVE FLOOR
+
+- type: tile
+  id: CaveDroughtPlanetLattice
+  name: CaveDroughtPlanet lattice
+  sprite: /Textures/_157/Tiles/cavedrought.png
+  variants: 8
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorCaveDrought
+  isSubfloor: true
+  deconstructTools: [ Cutting ]
+  weather: true
+  footstepSounds:
+    collection: FootstepPlating
+  friction: 0.3
+  isSpace: false
+  itemDrop: PartRodMetal1
+  heatCapacity: 10000
+
+- type: tile
+  id: CaveDroughtPlanetPlating
+  name: CaveDroughtPlanet plating
+  sprite: /Textures/Tiles/plating.png
+  baseTurf: CaveDroughtPlanetLattice
+  isSubfloor: true
+  deconstructTools: [ Axing ] # DeltaV - The return of fireaxe prying
+  footstepSounds:
+    collection: FootstepPlating
+  friction: 0.3
+  itemDrop: SheetSteel1
+  heatCapacity: 10000
+
+- type: tile
+  id: CaveDroughtFloorSteel
+  name: CaveDroughtPlanet tile 
+  sprite: /Textures/Tiles/steel.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: CaveDroughtPlanetPlating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: CaveDroughtFloorDark
+  name: CaveDroughtPlanet tile dark
+  sprite: /Textures/Tiles/dark.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: CaveDroughtPlanetPlating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemDark
+  heatCapacity: 10000
+
+- type: tile
+  id: CaveDroughtFloorWhite
+  name: CaveDroughtPlanet tile white
+  sprite: /Textures/Tiles/white.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: CaveDroughtPlanetPlating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemWhite
+  heatCapacity: 10000
+
+- type: tile
+  id: CaveDroughtPlanetWood
+  name: CaveDroughtPlanet wood tile
+  sprite: /Textures/Tiles/wood.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: CaveDroughtPlanetPlating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepWood
+  barestepSounds:
+    collection: BarestepWood
+  itemDrop: FloorTileItemWood
+  heatCapacity: 10000
+
+- type: tile
+  id: CaveDroughtPlanetReinforced
+  name: cave drought reinforced floor
+  sprite: /Textures/Tiles/reinforced.png
+  baseTurf: CaveDroughtPlanetPlating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: PartRodMetal1
+  heatCapacity: 10000
+
+- type: tile
+  id: CaveDroughtPlanetWoodLarge
+  name: CaveDroughtPlanet wood large
+  sprite: /Textures/Tiles/wood_large.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: CaveDroughtPlanetPlating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepWood
+  barestepSounds:
+    collection: BarestepWood
+  itemDrop: FloorTileItemWoodLarge
+  heatCapacity: 10000
+
+# NORMAL CAVE FLOOR
+
+- type: tile
+  id: CavePlanetLattice
+  name: CavePlanet lattice
+  sprite: /Textures/_157/Tiles/cave.png
+  variants: 7
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorCave
+  isSubfloor: true
+  deconstructTools: [ Cutting ]
+  weather: true
+  footstepSounds:
+    collection: FootstepPlating
+  friction: 0.3
+  isSpace: false
+  itemDrop: PartRodMetal1
+  heatCapacity: 10000
+
+- type: tile
+  id: CavePlanetPlating
+  name: CavePlanet plating
+  sprite: /Textures/Tiles/plating.png
+  baseTurf: CavePlanetLattice
+  isSubfloor: true
+  deconstructTools: [ Axing ] # DeltaV - The return of fireaxe prying
+  footstepSounds:
+    collection: FootstepPlating
+  friction: 0.3
+  itemDrop: SheetSteel1
+  heatCapacity: 10000
+
+- type: tile
+  id: CaveFloorSteel
+  name: CavePlanet tile 
+  sprite: /Textures/Tiles/steel.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: CavePlanetPlating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: CaveFloorDark
+  name: CavePlanet tile dark
+  sprite: /Textures/Tiles/dark.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: CavePlanetPlating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemDark
+  heatCapacity: 10000
+
+- type: tile
+  id: CaveFloorWhite
+  name: CavePlanet tile white
+  sprite: /Textures/Tiles/white.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: CavePlanetPlating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemWhite
+  heatCapacity: 10000
+
+- type: tile
+  id: CavePlanetWood
+  name: CavePlanet wood tile
+  sprite: /Textures/Tiles/wood.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: CavePlanetPlating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepWood
+  barestepSounds:
+    collection: BarestepWood
+  itemDrop: FloorTileItemWood
+  heatCapacity: 10000
+
+- type: tile
+  id: CavePlanetReinforced
+  name: CavePlanet reinforced floor
+  sprite: /Textures/Tiles/reinforced.png
+  baseTurf: CavePlanetPlating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: PartRodMetal1
+  heatCapacity: 10000
+
+- type: tile
+  id: CavePlanetWoodLarge
+  name: CavePlanet wood large
+  sprite: /Textures/Tiles/wood_large.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: CavePlanetPlating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepWood
+  barestepSounds:
+    collection: BarestepWood
+  itemDrop: FloorTileItemWoodLarge
+  heatCapacity: 10000
+
+
+

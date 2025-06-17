@@ -1,0 +1,35 @@
+﻿- type: entity
+  id: FTLExclusionField
+  parent: [ BaseMachinePowered, ConstructibleMachine ]
+  name: FTL exclusion field
+  description: Ensures that vessels know the location of settlements, saving structures from possible FTL related damage. Its max range protects within a fifty tile circle.
+  components:
+  - type: AmbientSound
+    enabled: false
+    volume: -6
+    range: 7
+    sound:
+      path: /Audio/Ambience/Objects/gravity_gen_hum.ogg
+  - type: Sprite
+    sprite: _157/Structures/Machines/exclusion_beacon.rsi
+    snapCardinals: true
+    layers:
+    - state: exclusion_beacon
+  - type: FTLExclusion
+    range: 50
+  - type: PointLight
+    radius: 1.5
+    energy: 1.8
+    color: "#b53ca1"
+
+- type: entity
+  parent: DefaultStationBeacon
+  id: DefaultSettlementBeacon
+  suffix: Settlement
+  description: Informs vessels on where to dock and the name of your settlement.
+  components:
+  - type: NavMapBeacon
+    defaultText: settlement dock
+    color: "#FFFF00"
+  - type: FTLSmashImmune
+  - type: FTLBeacon

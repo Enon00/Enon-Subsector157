@@ -1,0 +1,14 @@
+{
+    "version":1,
+    "license": "CC-BY-SA-4.0",
+    "copyright": "By Enon00(github) for _Subsector157, a Frontier Fork.",
+    "size":{
+    "x": 32,
+    "y": 32
+    },
+    "states":[
+        {
+            "name": "exclusion_beacon"
+        }
+    ]
+}

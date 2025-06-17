@@ -1,0 +1,34 @@
+- type: entity
+  id: FTLExclusionFieldCircuitboard
+  parent: BaseMachineCircuitboard
+  name: FTL exclusion field machine board
+  description: A machine printed circuit board for a FTL exclusion field.
+  components:
+    - type: MachineBoard
+      prototype: FTLExclusionField
+      requirements: # Frontier
+        PowerCell: 1 # Frontier componentRequirements<requirements
+        MatterBin: 1 # Frontier stackRequirements<requirements
+        Manipulator: 2 # Frontier stackRequirements<requirements
+        Capacitor: 4 # Frontier stackRequirements<requirements
+      stackRequirements:
+        CableHV: 10
+        CableMV: 10
+        ReinforcedPlasmaGlass: 15
+        Glass: 2
+
+- type: entity
+  id: DefaultSettlementBeaconCircuitboard
+  parent: BaseMachineCircuitboard
+  name: settlement beacon machine board
+  description: A machine printed circuit board for a settlement beacon.
+  components:
+    - type: MachineBoard
+      prototype: DefaultSettlementBeacon
+      requirements: # Frontier
+        PowerCell: 1 # Frontier componentRequirements<requirements
+        Manipulator: 2 # Frontier stackRequirements<requirements
+        Capacitor: 2 # Frontier stackRequirements<requirements
+      stackRequirements:
+        CableMV: 5
+        Glass: 2

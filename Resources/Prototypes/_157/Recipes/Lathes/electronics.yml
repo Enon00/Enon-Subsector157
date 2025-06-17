@@ -1,0 +1,9 @@
+- type: latheRecipe
+  parent: BaseCircuitboardRecipe
+  id: FTLExclusionFieldCircuitboard
+  result: FTLExclusionFieldCircuitboard
+
+- type: latheRecipe
+  parent: BaseCircuitboardRecipe
+  id: DefaultSettlementBeaconCircuitboard
+  result: DefaultSettlementBeaconCircuitboard

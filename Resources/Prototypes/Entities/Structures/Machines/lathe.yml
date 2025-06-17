@@ -205,6 +205,8 @@
       - SubstationMachineCircuitboard
       - WallmountSubstationElectronics
       - CellRechargerCircuitboard
+      - FTLExclusionFieldCircuitboard
+      - DefaultSettlementBeaconCircuitboard
       - BorgChargerCircuitboard
       - WeaponCapacitorRechargerCircuitboard
       - HandheldStationMap

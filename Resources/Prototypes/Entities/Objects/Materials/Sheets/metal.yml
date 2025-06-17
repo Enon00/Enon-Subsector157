@@ -59,6 +59,9 @@
   - type: FloorTile
     outputs:
     - Plating
+    - DirtPlanetPlating
+    - CaveDroughtPlanetPlating
+    - CavePlanetPlating
   - type: Extractable
     grindableSolutionName: steel
   - type: SolutionContainerManager
